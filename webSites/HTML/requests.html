@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../CSS/stylesheet.css">
+<script type="text/javascript" src="../JS/script.js"></script>
+</head>
+
+
+<body>
+
+<div class="container">
+
+
+
+
+<a href="requests.html"><h1 class="main-title"><img src="../IMAGES/logo.jpg" class="logo">  PicFix </h1></a>
+
+
+<nav>
+  <div class="requests">
+<a href="requests.html"><p> REQUESTS </p></a>
+  </div>
+  <div class="response">
+    <a href="response.html"><p> RESPONSE </p></a>
+  </div>
+</nav>
+
+<!-- Dropdown Menu, visas endast på bredare skärmar -->
+
+<div class="dropdown-menu">
+<div class="dropdown">
+  <img src="../IMAGES/meny.png" class="hamburger">
+
+<div class="dropdown-content">
+
+  <div class="requests">
+    <a href="requests.html"><p> REQUESTS </p></a>
+  </div>
+  <div class="response">
+    <a href="response.html"><p> RESPONSE </p></a>
+  </div>
+
+</div>
+
+</div>
+</div>
+
+
+
+ </div>
+
+<!-- Ett litet avsnitt för användare hur man gör en submission -->
+
+  <section class="makeSubmission">
+
+  <aside class="submit">
+<h3> Make your own submission:</h3>
+  <form>
+  Name: <br>
+  <input type="text" name="name">
+  </br>
+  What are you looking for?:
+  <br>
+  <input type="radio" name="service" value="logo" checked> Logo <br>
+  <input type="radio" name="service" value="editing"> Editing <br>
+  <input type="radio" name="service" value="drawing"> Digital Drawing
+<div>Details:</div>
+  <br>
+  <input type="text" name="comment">
+  </br>
+
+  </aside>
+
+
+<div>
+<h3>How to make your own submission:</h3>
+<ol>
+
+<li>Enter your name</li>
+<li>Choose service type</li>
+<li>Comment the specifics</li>
+<li>Add eventual media files</li>
+<li>Specify width and height</li>
+<li>Submit!</li>
+</ol>
+</div>
+</section>
+
+<main>
+
+<!-- Varje article är en blogpost där en önskan om någogn grafisk insats efterfrågas -->
+
+<h2>Submissions</h2>
+
+<article id="userReq1">
+  <div class="userInfoReq">
+
+<p> <img src="../IMAGES/profileUnknown.png" alt="" class="profile">Leonardo Weissman</p>
+<div class="date"><p>2019.05.20</p></div>
+  </div>
+  <div>
+  <p> Hi, I'd love if someone could make a gif out of this picture. I want the mouse to wag his finger and his head as if saying no.</p>
+<img src="../IMAGES/mouse.png" class ="reqImage">
+      <table>
+          <tr>
+                <th>Width</th> <th>Height</th>
+          </tr>
+          <tr>
+                <td>100px</td> <td>500px</td>
+          </tr>
+      </table>
+
+<ul></ul>
+
+    </div>
+</article>
+
+<article id="userReq2">
+  <div class="userInfoReq">
+
+<p> <img src="../IMAGES/profileUnknown.png" alt="" class="profile">Anna Brown</p>
+<div class="date"><p>2019.05.21</p></div>
+  </div>
+
+    <div>
+    <p>  I only want the last 4 seconds of this video. Could someone cut it for me?</p>
+      <video height="auto" width="100%" controls>
+        <source src="../IMAGES/waterfall.mp4" type="video/mp4">
+      </video>
+
+      <table>
+          <tr>
+                <th>Width</th> <th>Height</th>
+          </tr>
+          <tr>
+                <td>600px</td> <td>300px</td>
+          </tr>
+
+      </table>
+
+<ul></ul>
+
+    </div>
+</article>
+
+<article id="userReq3">
+  <div class="userInfoReq">
+
+<p> <img src="../IMAGES/profileUnknown.png" alt="" class="profile"> Arne Borg</p>
+<div class="date"><p>2019.05.22</p></div>
+  </div>
+
+    <div>
+    <p>  I need a drawing of a running cat wearing jewelry and a satchel bag. Modern cartoon style.</p>
+      <table>
+          <tr>
+                <th></th> <th></th>
+          </tr>
+          <tr>
+                <td></td> <td></td>
+          </tr>
+
+      </table>
+
+<ul></ul>
+    </div>
+</article>
+
+<!-- De tre knapparna som gör det möjligt att visa ett nytt inlägg per klick -->
+
+<p id="button1" onclick="click1()">Show submission</p>
+<p id="button2" onclick="click2()">Show submission</p>
+<p id="button3" onclick="click3()">Show submission</p>
+<h6><a href="#top">Return to Top</a></h6>
+
+</main>
+
+<!-- Sticky footer med extern länk -->
+
+<footer>
+<div><a href="https://www.photoshop.com/" class="psLink"><h6>In cooperation with Photoshop</h6></a></div>
+  &copy; PicFix 2019</footer>
+
+</body>
+
+</html>
